@@ -1,1 +1,7 @@
-# add your code here
+# import pandas
+import pandas as pd
+#create a data frame with the excerise's specified requirements
+fruit_sales = pd.DataFrame({'Apples': [35, 41], 'Bananas': [21, 34]}, index=['2017 Sales', '2018 Sales'])
+
+#save data frame to a csv
+fruit_sales.to_csv('fruit.csv')
